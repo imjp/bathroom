@@ -20,5 +20,5 @@ end
 gem 'jquery-rails'
 
 group :production do 
-  #gem 'pg'
+  gem 'pg'
 end
