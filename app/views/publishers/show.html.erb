@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @publisher.name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @publisher.bar_type %>
+</p> 
+<p>
+	<b>Age group:</b>
+  <%= @publisher.age_group %>
+</p>
+
+<p>
+  <b>Traffic:</b>
+  <%= @publisher.traffic %>
+</p>
+
+<p>
+  <b>Male Toilets:</b>
+  <%= @publisher.male_toilets %>
+</p>
+<p>
+  <b>Female Toilets:</b>
+  <%= @publisher.female_toilets %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @publisher.location %>
+</p>
+<p>
+  <b>Phone:</b>
+  <%= @publisher.phone %>
+</p>
+<p>
+  <b>Email:</b>
+  <%= @publisher.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_publisher_path(@publisher) %> |
+<%= link_to 'Back', publishers_path %>

@@ -1,0 +1,43 @@
+<div id="main_content_wrapper">
+	<div id="main_content">			
+
+				<table id="publishers" class="index_table">
+					<tr> 
+						<th>Name</th>
+						<th>Type</th>
+						<th>Age group</th>
+						<th>Traffic per Month</th>
+						<th>Male Toilets</th>
+						<th>Female Toilets</th>
+						<th>Location</th>
+						<th>Phone</th>
+						<th>Email</th>
+						<th>Price</th>
+						<th>Available</th>
+						<th>Available On</th>
+					</tr>
+
+				<% @publishers.each do |publisher| %>
+					<% if publisher.available == "No" %>
+						<tr class="unavailable">
+					<% else %>
+						<tr>
+					<% end %>
+						<td><%= publisher.name %></td>
+						<td><%= publisher.bar_type %></td>
+						<td><%= publisher.age_group %></td>
+						<td><%= publisher.traffic %></td>
+						<td><%= publisher.male_toilets %></td>
+						<td><%= publisher.female_toilets %></td>
+						<td><%= publisher.location %></td>
+						<td><%= publisher.phone %></td>
+						<td><%= publisher.email %></td>
+						<td><%= publisher.price %></td>						
+						<td><%= publisher.available %></td>
+						<td><%= publisher.available_on %></td>
+					</tr>
+				<% end %>
+				</table>
+				
+	</div>
+</div>

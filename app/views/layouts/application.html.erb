@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bathroom</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1 id="site_title">Noxxar Marketing</h1>
+			
+			<p id="utility_nav">
+				<a href="/admin">Admin Login</a>
+			</p>			
+		</div>
+		
+		<div id="title_bar">
+			<div id="titlebar_left">
+				<h2 id="page_title">List of Bars &amp; Clubs</h2>
+			</div>
+		</div>	
+
+		<div id="active_admin_content">					
+			<%= yield %>		
+		</div>
+		
+	</div>
+</body>
+</html>
