@@ -4,5 +4,5 @@ class Publisher < ActiveRecord::Base
 									:available, :available_on
 									
 	validates_uniqueness_of :name
-	validates_presence_of :name, :type
+	validates_presence_of :name
 end

@@ -8,9 +8,7 @@ gem "eventmachine", "~> 1.0.0.beta.4.1"
 gem 'thin' 
 gem 'sass-rails',   '~> 3.1.5'
 
-group :development, :test do
-  gem 'sqlite3'
-end 
+
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
@@ -18,6 +16,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development, :test do
+  gem 'sqlite3'
+end 
 
 group :production do 
   gem 'pg'
